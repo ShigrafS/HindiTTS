@@ -17,35 +17,37 @@ This repository contains the code and resources for training a text-to-speech (T
 - [License](#license)
 
 ## Introduction
-TTS technology converts written text into spoken words, making it useful in various applications such as virtual assistants, audiobooks, and accessibility tools. This project aims to enhance a pre-trained TTS model's performance by fine-tuning it on a specific dataset.
+This is a Microsoft SpeechT5 model fine-tuned for Hindi. 
 
 ## Dataset Description
-- **Source**: [Specify the dataset source, e.g., LibriSpeech, VoxCeleb, etc.]
+- **Source**: https://www.kaggle.com/datasets/skywalker290/hindi-f
 - **Content**: 
-  - Total audio duration: [X hours]
-  - Number of speakers: [X]
-  - Types of speech: [e.g., scripted, conversational]
+  - No of Audio files: 16512
+  - Number of speakers: 1
+  - Types of speech: Scripted
 - **Preprocessing Steps**:
   - Normalization of audio levels
   - Segmentation into shorter clips
   - Tokenization of text data
 
 ## Model Architecture
-This project utilizes the [Model Name] architecture, which is a state-of-the-art TTS model. The model was fine-tuned from the pre-trained version available in [Model Repository or Library, e.g., Hugging Face].
+This project utilizes the Microsoft Text-To-Speech architecture, which is based on Google T5 model. 
 
 ### Key Features
 - [List any specific features or modifications made to the model]
 
 ## Training Setup
 - **Environment**: 
-  - Python version: [Specify version]
+  - Python version: 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]
   - Libraries: 
-    - PyTorch
-    - [Other dependencies, e.g., NumPy, SciPy, etc.]
+    - PyTorch: 2.5.0+cu121
+    - NumPy: 1.26.4
+    - Pandas: 2.2.2
+    - Matplotlib: 3.7.1
 - **Hyperparameters**:
   - Learning rate: [Value]
   - Batch size: [Value]
-  - Number of epochs: [Value]
+  - Number of epochs: 20
 
 ### Training Logs
 ![Loss Curve](path/to/loss_curve.png)  
