@@ -74,10 +74,19 @@ git clone https://github.com/yourusername/your-repo.git
 cd your-repo
 pip install -r requirements.txt
 ```
-##Usage
+## Usage
+To use the model via pipeline, run the following code:
 
-##Contributing 
+```python
+# Use a pipeline as a high-level helper
+from transformers import pipeline
 
-##License
+pipe = pipeline("text-to-audio", model="ShigrafS/hindi_text_to_speech_tts")
+```
 
-## Table of Contents
+## Contributing 
+
+Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
+
+## License
+
